@@ -16,8 +16,8 @@ const chat_1 = require("./models/chat");
 const httpServer = (0, http_1.createServer)(app_1.app);
 const io = new socket_io_1.Server(httpServer, {
     cors: {
-        origin: "https://privch.netlify.app/",
-        methods: ["GET", "POST"],
+        origin: "https://privch.netlify.app",
+        methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
         credentials: true,
     },
 });

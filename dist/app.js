@@ -10,7 +10,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config({ path: "dist/config/config.env" });
 exports.app = (0, express_1.default)();
 const corsOptions = {
-    origin: ["https://privch.netlify.app", "https://privch.netlify.app"],
+    origin: ["http://localhost:5173"],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     optionsSuccessStatus: 204,

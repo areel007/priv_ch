@@ -6,7 +6,7 @@ dotenv.config({ path: "dist/config/config.env" });
 export const app = express();
 
 const corsOptions = {
-  origin: ["https://privch.netlify.app", "https://privch.netlify.app"], // Add your Netlify app URL here
+  origin: ["http://localhost:5173"], // Add your Netlify app URL here
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,

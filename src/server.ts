@@ -7,8 +7,8 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://privch.netlify.app/",
-    methods: ["GET", "POST"],
+    origin: "https://privch.netlify.app",
+    methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
     credentials: true,
   },
 });
